@@ -29,7 +29,7 @@ const peerServer = ExpressPeerServer(server, {
   allow_discovery: process.env.GALAXY_PEERJS_DISCOVERIED || true
 });
 
-app.use('/peerjs', peerServer);
+app.use('/', peerServer);
 
 /**
  * Listen on provided port, on all network interfaces.
